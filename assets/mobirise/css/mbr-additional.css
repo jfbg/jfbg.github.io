@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300);
+
+#header1-1 H1 {
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  font-size: 48px;
+}
+#header1-1 P {
+  color: #fff;
+  font-size: 24px;
+    font-family: 'Muli', sans-serif;
+}
+#menu-18 .mbr-brand__name {
+  font-size: 16px;
+}
+#menu-18.mbr-navbar--stuck .mbr-navbar__section {
+  background: #2c2c2c;
+}
+
+#header3_J1 H3 {
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  font-size: 30px;
+}
+#header3_J1 P {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Muli', sans-serif;
+}
+
+
+#header3-10 H3 {
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  font-size: 30px;
+}
+#header3-10 P {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Muli', sans-serif;
+}
+#content1-11 BLOCKQUOTE {
+  color: #000000;
+}
+#content1-11 UL {
+  text-align: left;
+}
+#content1-12 BLOCKQUOTE {
+  color: #000000;
+}
+#content1-12 P {
+  font-family: 'Oxygen', sans-serif;
+}
+#content1-14 BLOCKQUOTE {
+  color: #000000;
+  margin-left: 10%;
+  font-size: 12pt;
+  font-family: 'Oxygen', sans-serif;
+}
+#msg-box4-28 .mbr-header__text {
+  color: #4c6972;
+}
+#msg-box4-28 .mbr-header__subtext {
+  color: #ffffff;
+}
+#msg-box4-28 .mbr-article {
+  color: #ffffff;
+}
+#msg-box4-28 .mbr-article P {
+  color: #000000;
+}
+#ext_menu-13 .mbr-brand__name {
+  font-size: 16px;
+}
+#ext_menu-13.mbr-navbar--stuck .mbr-navbar__section {
+  background: #efefef;
+}
+#ext_menu-13 .mbr-navbar__section {
+  background: #efefef;
+}
+#ext_menu-13 .mbr-brand__name {
+  font-size: 16px;
+}
+#ext_menu-13.mbr-navbar--stuck .mbr-navbar__section {
+  background: #efefef;
+}
+#ext_menu-13 .mbr-navbar__section {
+  background: #efefef;
+}
+
+#header3-31 H3 {
+  text-align: center;
+}
+#content1-24 UL {
+  font-family: 'Lato', sans-serif;
+}
+#ext_menu-13 .mbr-brand__name {
+  font-size: 16px;
+}
+#ext_menu-13.mbr-navbar--stuck .mbr-navbar__section {
+  background: #efefef;
+}
+#ext_menu-13 .mbr-navbar__section {
+  background: #efefef;
+}
+#ext_menu-13 .mbr-brand__name {
+  font-size: 16px;
+}
+#ext_menu-13.mbr-navbar--stuck .mbr-navbar__section {
+  background: #efefef;
+}
+#ext_menu-13 .mbr-navbar__section {
+  background: #efefef;
+}
+#slider2-20 P {
+  text-align: left;
+  color: #d14841;
+}
+#content5-22 .mbr-header .mbr-header__text {
+  text-align: center;
+  color: #fff;
+}
+#content5-22 .mbr-header .mbr-header__subtext {
+  text-align: center;
+  color: #fff;
+}
+#content5-22 .mbr-article {
+  color: #fff;
+}
+#menu-18 .mbr-brand__name {
+  font-size: 16px;
+}
+#menu-18.mbr-navbar--stuck .mbr-navbar__section {
+  background: #000;
+}
+
+#JFBG_col1 {
+  overflow: hidden;
+  float:left    
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#JFBG_col2 {
+  overflow: hidden;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: 50px;
+}
+
+#logo10 {
+  float: left;
+  width: 45px;  
+  height: auto;
+  margin-right: 0px;
+}
+
+#head_name {
+    color: #fff;
+}
+
+
+.page-wrapper {
+/*  height: 100%;*/
+/*  position: relative;*/
+}
+
+.index-page-wrapper {
+  height: 100%;
+  position: relative;
+  padding-top: 59px;
+}
+
+.left-column {
+  
+/*  top:0;*/
+/*  left:0;*/
+    position:absolute;
+  width:250px;
+/*  width:25%;*/
+/*  height:100%;*/
+  background:#fff;
+  min-height:100%;
+  float:left;
+}
+
+.right-column {
+  margin-left:250px;
+  width:75%;
+  background:#fff;
+  min-height:100%;  /* <-- fixes the background-color issue when content grows */
+/*  float: right*/
+}
+
+.index-left-column {
+  width:50%;
+  background:#fff;
+  float:left;
+}
+
+.index-right-column {
+  margin-left:50%;
+  background:#fff;
+  width:50%;
+ 
+  
+}
+
+#btn-J_PDF {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.leftbar_title {
+    text-align: center;
+}
+
+#id3 {
+    margin-bottom: -5px;
+}
+
+#rowwithsub {
+    margin-bottom: 20px;
+}
+
+#locations_h4 {
+    margin-top:-12px;
+}
+
+#features1-5 {
+    padding-bottom: 59px;
+}
+
+#contact_top {
+    padding-bottom: 59px;
+}
+
+.index_figure{
+    width:100%;
+}
+
+.profilepic {
+    width:33%;
+    float: right;
+}
+
+.leftbar_newrow {
+    padding-top: 34px;    
+}
+
+.leftbar_posttitle {
+    padding-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
