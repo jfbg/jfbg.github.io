@@ -243,8 +243,7 @@
 }
 
 .profilepic {
-    width:100%;
-    float: left;
+    max-width: 200px;   
 }
 
 .leftbar_newrow {
