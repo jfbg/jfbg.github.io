@@ -244,6 +244,7 @@
 
 .profilepic {
     max-width: 200px;   
+    float: right;
 }
 
 .leftbar_newrow {
