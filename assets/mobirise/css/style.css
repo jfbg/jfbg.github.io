@@ -1099,6 +1099,17 @@ html {
   line-height: 1.5em;
   margin: 0;
 }
+
+.mbr-header__text2 {
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  line-height: 1.5em;
+  margin: 0;
+    text-align: center;
+}
+
 .mbr-header__subtext {
   color: #777;
   font-size: 14px;
