@@ -243,8 +243,8 @@
 }
 
 .profilepic {
-    width:33%;
-    float: right;
+/*    width:33%;*/
+    float: left;
 }
 
 .leftbar_newrow {

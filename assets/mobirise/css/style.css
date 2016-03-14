@@ -1102,9 +1102,10 @@ html {
 .mbr-header__subtext {
   color: #777;
   font-size: 14px;
-  font-style: italic;
+/*  font-style: italic;*/
   letter-spacing: 1px;
   margin: 8px 0 7px 0;
+    text-align: justify;
 }
 .mbr-header--inline {
   margin-top: 0;
