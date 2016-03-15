@@ -854,6 +854,25 @@ html {
   position: relative;
 }
 
+.social-figure {
+  display: inline-block;
+  line-height: 1px;
+  margin: 5px;
+  max-width: 40px;
+  height: auto;
+  position: relative;
+}
+
+.im-centered { margin: auto; max-width: 120px;}
+
+.social-img {
+    
+  max-width: auto;
+  height: 40px;;
+    
+}
+
+
 .mbr-figure--no-bg {
   background: none;
 }
