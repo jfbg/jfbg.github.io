@@ -153,7 +153,8 @@
 
 #logo10 {
   float: left;
-  width: 45px;  
+  width: inherit;
+  max-width: 35px;  
   height: auto;
   margin-right: 0px;
 }
