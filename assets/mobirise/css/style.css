@@ -1463,6 +1463,7 @@ html {
   font-weight: bold;
   line-height: 1.3em;
   text-align: left;
+font-family: 'Oxygen', sans-serif;
 }
 .mbr-article--wysiwyg2 h1 {
   font-size: 27px;
@@ -1491,8 +1492,14 @@ html {
 .mbr-article--wysiwyg2 ol,
 .mbr-article--wysiwyg2 blockquote {
   margin: 0 0 10px 0;
-  float:
+  font-family: 'Oxygen', sans-serif;
+  color:black;
 
+}
+
+.mbr-article--wysiwyg2 ul{
+    font-size: 14px;
+    line-height: normal;
 }
 .mbr-article--wysiwyg2 blockquote {
   font-size: 17px;
