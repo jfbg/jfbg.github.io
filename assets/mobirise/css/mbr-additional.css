@@ -278,3 +278,14 @@
 .form2 {
     margin-bottom: 20px;
 }
+
+#contact-top {
+ margin-top: 20px;   
+}
+
+#contact-info {
+    text-align: center;
+    vertical-align: middle;
+    height:auto;
+    font-size: 17px;
+}
