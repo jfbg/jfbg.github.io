@@ -306,3 +306,20 @@
 }
 
 
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+}
+
+#copyright {
+  display: inline-block;
+  background: lightblue
+  padding:.5em;
+  
+  transform-origin: bottom left;
+  transform:translate(0%, 0%) rotate(90deg) ;
+}
