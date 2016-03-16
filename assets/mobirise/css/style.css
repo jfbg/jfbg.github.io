@@ -581,6 +581,11 @@ html {
   padding-top: 93px;
   padding-bottom: 41px;
 }
+
+.mbr-section__container--first2 {
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
 .mbr-section__container--first-J {
   padding-top: 60px;
 /*  padding-bottom: 41px;*/

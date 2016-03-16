@@ -8,16 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel=”shortcut icon” href=”/favicon.ico” type=”image/x-icon” /> 
   <meta name="description" content="">
-  <title>Research Work</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+  <title>Research &amp; Stuff</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,300">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/mobirise/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+  <link href="assets/SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="assets/SpryAssets/SpryAccordion.js"></script>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 320px)" href="mobile.css" />
+    
+
 </head>
-<body>
+    
+<body onLoad="init();">
 <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--sticky mbr-navbar--auto-collapse" id="ext_menu-13">
     <div class="mbr-navbar__section mbr-section">
         <div class="mbr-section__container container">
@@ -82,40 +85,123 @@
 </section>
 
 <section class="mbr-section mbr-after-navbar" id="header3-25">
-    <div class="mbr-section__container container mbr-section__container--first">
+    <div class="mbr-section__container container mbr-section__container--first2">
         <div class="mbr-header mbr-header--wysiwyg row">
             <div class="col-sm-8 col-sm-offset-2">
-                <h3 class="mbr-header__text">Some cool research stuff here.</h3>
-                <p class="mbr-header__subtext">By me.</p>
-                <br>
-                <h3>Under Construction.</h3>
+                <figure><img class="res-topfig" src="images/JSC2007e045379_100h.jpg"></figure>
             </div>
         </div>
     </div>
 </section>
 
+<div class="row" id="accor">
+<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+    
+<div id="SpryAccordion1" class="Accordion" tabindex="0">
+<div class="AccordionPanel">
+<div class="AccordionPanelTab">Research Context</div>
+<div class="AccordionPanelContent">
+<div class="acontent"> 
+<!--    <p align="justify">-->
+    <p>The Moon is the only Solar System object, other than the Earth, for which we have seismic data (Mars will join this select group in 2018). The four seismometers installed at the start of the Apollo Passive Seismic Experiment (APSE, 1969-1977) returned over seven years of continuous seismic recordings. More than 40 years of analyses of the APSE data have yielded important discoveries regarding the inner structure and properties of the Moon. These include a better understanding of interior seismic velocities to depths of >1000 km (e.g. [04, 14, 31 32]), as well as constraints (albeit limited ones) on the depths of the major compositional layers forming the Moon’s interior (e.g. [17, 33]).</p>
+    <p>Four different types of seismic events were identified in the APSE data: artificial impacts, natural impacts, deep moonquakes and shallow moonquakes. The signals are atypical of the majority of events recorded daily on Earth, suggesting inherently different properties of the lunar and terrestrial interiors. Some of the characteristics of the lunar seismograms are: long durations (~60 minutes or more), low amplitudes, lack of identifiable secondary wave arrivals, gradual build up of energy from the onset of the events (rise time), and a slow amplitude decay from the maximum amplitude to the end of the event (when the signal amplitude reaches the background noise level). Figure 5 shows a typical shallow moonquake seismogram. These aspects of the lunar seismic recordings, combined with the low number of stations and the APSE network poor geographical coverage, mean that some well- established seismic data analysis techniques used routinely in terrestrial studies cannot be easily applied to the lunar data set. For example, the locations of moonquake typically have an uncertainty of >100 km, which is an order of magnitude or more larger than typical uncertainties of terrestrial teleseismic events.</p>
+    <p>A long-standing explanation for the unusual characteristics of the APSE data is that the seismic energy propagates in a highly scattering layer characterized by a very low intrinsic attenuation [34, 35]. This scattering layer is thought to comprise the very fine-grained surface regolith layer and the underlying highly fractured layer known as the megaregolith, both generated through billions of years of surface impacts [36]. Because the Moon has no surface recycling mechanism (e.g., plate tectonics), these layers are global and can potentially reach depths of several 10’s of km. The small- to large-scale heterogeneities in these layers cause coherent wave fronts to randomly disperse in a process known as seismic scattering. The concentration and size distribution of the scatterers will control the intensity of the scattering and the frequencies that are affected. The lunar seismic data exhibit intense scattering over the whole range of recorded frequencies (approximately 0.25 to 10 Hz).</p>
+    <p>While scattering was inferred to the cause of the long lunar seismic coda, a systematic study of these signals was never undertaken, and so a potentially important resource for understanding the structure near-surface mega- regolith layer has never been explored fully. The core of my research has been to investigate the structure of the mega-regolith through seismic scattering; this structure in turn, has implications for the bombardment history of the Moon. I have analyzed the scattering signatures of the Apollo data set to constrain the scattering structure of the Moon. A major part of my research has been to develop a new synthetic seismogram capability that can incorporate the types of scattering expected on non-Earth planets and Moons and benchmarked this against other codes. I have used this capability to produce lunar scattering models that match the observed characteristics of the data. Besides shedding light on the scattering structure of the Moon, my work is important in order to understand the limitations of the APSE data, as well as the limits and potential of any future seismic survey on highly scattering bodies (e.g. asteroids and Mars). As such, my research not only gives new insight into the mechanisms controlling the propagation of seismic energy in the Moon, but it also allows us to make predictions regarding the characteristics of the seismic signals that could one day be recorded on other Solar System objects.   
+    
+</p>
+
+</div>
+</div>
+</div>
+    
+<div class="AccordionPanel">
+<div class="AccordionPanelTab">Characterization of Scattering in Lunar Seismic Coda</div>
+<div class="AccordionPanelContent">
+<div class="acontent"> 
+    <p>I have made the first systematic analysis of scattering in the Apollo lunar seismic data, characterized through the rise and decay parameters of the seismic coda (Figure 1). This was done by measuring the coda wave decay factor Qc for the all types of seismic events, in several frequency bands, at all four Apollo stations. Qc is a measure of the strength of the scattering encountered by the seismic energy as it travels from the source to the receiver. A high Qc (slow decay time) indicates a high level of scattering. This work was the first research project to use the Apollo seismic dataset to build understanding of the effect of highly scattering medium on the propagation of seismic energy on a global planetary scale.</p>
+    <p>Main results:<ol><li>I have identified much greater scattering for shallow (~0-200km depth) versus deep
+(>~700km) sources and for frequencies greater than 2 Hz. This confirms that the mega
+    regolith is playing a major role in scattering seismic energy.</li>
+    <li>Results indicate that the effect of scattering would be less at frequencies lower than those
+observed by the APSE experiment (0.5-10 Hz), which will be helpful in the future design of
+        lunar (or other planetary bodies) seismic surveys.</li>
+    <li>These results and interpretations also provide constraints and testable hypotheses for lunar
+waveform models that include the effect of intense scattering and near-surface low velocity layer.
+    </li></ol>
+    
+    </p>
+    
+    
+
+</div>
+</div>
+</div>  
+        
+   
+<div class="AccordionPanel">
+<div class="AccordionPanelTab">Modeling Seismic Energy Propagation in Highly Scattering Medium</div>
+<div class="AccordionPanelContent">
+<div class="acontent">
+    <p> I have modeled the ground deformation caused by seismic energy travelling in highly scattering medium using a modified “phonon method”. This methods tracks large amount of seismic packets from the seismic source (quake, or surface impact) and record the ground deformation each time they reach the surface. This method is favoured over other synthetic seismic modeling methods using the wave equation (e.g. spectral finite element, frequency- wavenumber) because it can reach much larger frequencies and signal durations in very highly heterogeneous medium with much less computational power. My updated method proved very efficient at producing synthetic signals for bodies like the Moon, asteroids, and Mars for example. A major hurdle in this project was the code benchmarking due to the novel nature of this method. Benchmarking proved to be an onerous process because of the lack of other standard numerical benchmarks against which to compare it. This was in part responsible for the delayed publication of the accompanying article.</p>
+    <p>Main product and results:
+        <ol><li>First numerical modeling of 3D scattering (with 1D background velocity models), with user-
+defined power-law distributions of scatterer length-scales, frequency dependent intrinsic
+attenuation, as well as global background scattering.</li>
+    <li>My results show how the variations in the signal’s coda decay attributes can be analyzed to
+assess the first-order structural properties of highly scattering bodies.</li>
+    <li>I show that the variation of decay times with epicentral distance is most affected by the
+presence of near-surface low-velocity layers (e.g. regolith, crust) that focus seismic energy near the surface and in the scattering layer, by the event source depth, the frequency content, and the levels of intrinsic attenuation.</li>
+    <li>I also demonstrate that the magnitude of the decay times is controlled by the size-frequency distribution of scatterers, the thickness 
+</div>
+</div>
+</div>    
+    
+<div class="AccordionPanel">
+<div class="AccordionPanelTab">Investigating the effects of laterally varying megaregolith thickness on recorded seismic signals</div>
+<div class="AccordionPanelContent">
+<div class="acontent"><p>Using the phonon approach, I produced synthetic seismograms for varying source depths and megaregolith thickness (analogous to a large impact basin surrounded by lunar highlands, for example). The main goal of this project was to identify conditions under which seismograms recorded at the surface are less likely to be affected by high levels of scattering, and for which secondary arrivals containing important information about interior structure can be more readily identified. Such studies will help optimize the design of future non-terrestrial seismic surveys to maximize scientific return.</p>
+    <p>Main results to date:
+        <ol><li>Receivers located in large impact structures, away from the edges, with thin crust and thinner
+            megaregolith, are more likely to record seismic signals that are less affected by high levels of scattering, and for which secondary arrivals containing important information about interior structure can be more readily identified.</li>
+            <li>Seismic sources located beneath the near-surface scattering layer, for example deep lunar quakes, are better suited to produce seismic recordings less affected by high levels of scattering.</li></ol>
+    </p>
+</div>
+</div>
+</div>       
+    
+</div>
+</div>
+</div>
+    
+    
+
 
     
-<!--
-<footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-2" style="background-color: rgb(68, 68, 68);">
-    
+<section class="mbr-section">
     <div class="mbr-section__container container">
-        <div class="mbr-footer mbr-footer--wysiwyg row">
-            <div class="col-sm-12">
-                <p class="mbr-footer__copyright">Copyright (c) 2016 Jean-Fran&ccedil;ois Blanchette-Guertin.&nbsp;</p>
+        <div class="mbr-header mbr-header--wysiwyg row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <figure><img class="res-topfig" src="images/JSC2011e118361_1510w.jpg"></figure>
             </div>
         </div>
     </div>
-</footer>    
--->
-    
+</section>
+
+<script type="text/javascript">
+
+var SpryAccordion1 = new Spry.Widget.Accordion("SpryAccordion1", {useFixedPanelHeights:false, defaultPanel:-1});
+</script>
 
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/smooth-scroll/SmoothScroll.js"></script>
   <script src="assets/mobirise/js/script.js"></script>
+    
   
-  
+
 </body>
+
+
+
 </html>
