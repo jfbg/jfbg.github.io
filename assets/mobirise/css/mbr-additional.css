@@ -285,7 +285,11 @@
 
 #contact-info {
     text-align: center;
-    vertical-align: middle;
-    height:auto;
+    vertical-align: bottom;
+/*    height:inherit;*/
     font-size: 17px;
+}
+
+#contact-row {
+    height:400px
 }
