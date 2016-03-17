@@ -231,6 +231,11 @@
     max-width: 150px;
 }
 
+#btn-J_RES {
+    min-width: 175px;
+    max-width: 175px;
+}
+
 .leftbar_title {
     text-align: center;
 }
@@ -329,5 +334,11 @@
 
 .UC {
     text-align: center;
+    
+}
+
+#UC-row {
+    background-color: #EFEFEF;
+    height: 10px;
     
 }

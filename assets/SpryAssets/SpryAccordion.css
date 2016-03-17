@@ -19,6 +19,7 @@
 .Accordion {
 	overflow: hidden;
     outline:none;
+    width:95%;
 /*	width: 908px;*/
 }
 
@@ -66,7 +67,7 @@
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
 	background-color: #FFF;
-    text-align: center;
+    text-align: left;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 }
