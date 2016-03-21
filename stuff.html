@@ -15,7 +15,44 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   <link href="assets/SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="assets/SpryAssets/SpryAccordion.js"></script>
-<link rel="stylesheet" type="text/css" media="screen and (max-width: 320px)" href="mobile.css" />
+  <link href="assets/ninja/ninja-slider.css" rel="stylesheet" type="text/css" />
+  <script src="assets/ninja/ninja-slider.js" type="text/javascript"></script>
+  <script>
+        function lightbox(idx) {
+            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
+            var ninjaSldr = document.getElementById("ninja-slider");
+            ninjaSldr.parentNode.style.display = "block";
+
+            nslider.init(idx);
+
+            var fsBtn = document.getElementById("fsBtn");
+            fsBtn.click();
+        }
+
+        function fsIconClick(isFullscreen) { //fsIconClick is the default event handler of the fullscreen button
+            var ninjaSldr = document.getElementById("ninja-slider");
+            ninjaSldr.parentNode.style.display = isFullscreen ? "block" : "none";
+        }
+  </script>
+    
+      <script>
+        function lightbox2(idx) {
+            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
+            var ninjaSldr = document.getElementById("ninja-slider2");
+            ninjaSldr.parentNode.style.display = "block";
+
+            nslider.init(idx);
+
+            var fsBtn2 = document.getElementById("fsBtn2");
+            fsBtn.click();
+        }
+
+        function fsIconClick(isFullscreen) { //fsIconClick is the default event handler of the fullscreen button
+            var ninjaSldr = document.getElementById("ninja-slider2");
+            ninjaSldr.parentNode.style.display = isFullscreen ? "block" : "none";
+        }
+  </script>
+
     
 
 </head>
@@ -116,7 +153,7 @@
 <div class="AccordionPanelContent">
 <div class="acontent"> 
 <!--    <p align="justify">-->
-    <p> The lunar event catalog can be found in text format from Nakamura (1992). I converted this catalog into a mySQL database and included epicentral locations, depths, arrival times picks for various events used in past analyses. It has proven to be pretty useful to automate our inversion work or to simply query and play with the data. I update this database occasionally with data from articles used in my work. Feel free to download the database and see if it can be of some use to you!</p>
+    <p> The lunar event catalog can be found in text format from Nakamura (1992). I converted this catalog into a mySQL databases and included epicentral locations, depths, arrival times picks for various events used in past analyses. It has proven to be pretty useful to automate our inversion work or to simply query and play with the data. I update this database r occasionally with data from articles used in my work. Feel free to download the database and see if it can be of some use to you!</p>
     
     <p>Database and some explanatory material: <a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7aUZuOW11ak5uVGM/view?usp=sharing">Here</a>.</p>
         
@@ -132,29 +169,73 @@
     
     
 <div class="AccordionPanel">
-<div class="AccordionPanelTab">Poster-Mania</div>
+<div class="AccordionPanelTab">Conference Presentations</div>
 <div class="AccordionPanelContent">
 <div class="acontent"> 
 <!--    <p align="justify">-->
-    <p> Here's a selection of poster presentations from past American Geophysical Union (<a href="https://fallmeeting.agu.org/">AGU</a>) Fall Meetings and Lunar And Planetary Science Conferences (<a href="http://www.hou.usra.edu/meetings/lpsc2016/">LPSC</a>). Click for PDF versions.
+    <p> Here's a selection of past presentations (oral or poster) from past American Geophysical Union (<a href="https://fallmeeting.agu.org/">AGU</a>) Fall Meetings and Lunar And Planetary Science Conferences (<a href="http://www.hou.usra.edu/meetings/lpsc2016/">LPSC</a>). Click for PDF versions.
     </p>
-    <h3>LPSC 2015</h3><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7dmVvMVE1eGptOU0/view?usp=sharing">
-    <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2015_JFBGsm.jpg"></a></p>
-    <h3>LPSC 2012</h3><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7bkpTYWFfTXlIX28/view?usp=sharing">
+    
+    <div class="row">
+        <div class="col-md-6 col-sm-12"> 
+            <h3 id="poster-title">LPSC 2015</h3>
+            <h4 id="poster-title">Interior Structure Inversion</h4>
+            <p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7dmVvMVE1eGptOU0/view?usp=sharing">
+            <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2015_JFBGsm.jpg"></a></p>
+        </div>
+    
+        <div class="col-md-6 col-sm-12">
+            <h3 id="poster-title">AGU 2015</h3>
+            <h4 id="poster-title">Interior Structure Inversion</h4>
+            <p><img class="poster-sm center-block" align="middle" src="images/presentations/AGU2015/AGU2015_01.png" onclick="lightbox(0)"></p>  
+        </div>
+        
+    </div>
+        
+    <div class="row">
+
+    <div class="col-md-6 col-sm-12">
+    <h3 id="poster-title">LPSC 2012</h3><h4 id="poster-title">Seismic Scattering</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7bkpTYWFfTXlIX28/view?usp=sharing">
     <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2012_JFBGsm.jpg"></a></p>
-    <h3>LPSC 2011 - 1</h3><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7Z3lKbzZubFkxZkU/view?usp=sharing">
+    </div>
+    
+        
+        <div class="col-md-6 col-sm-12">  
+       <h3 id="poster-title">LPSC 2011</h3><h4 id="poster-title">Seismic Scattering</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7Z3lKbzZubFkxZkU/view?usp=sharing">
     <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2011_JFBG_codasm.jpg"></a></p>
-    <h3>LPSC 2011 - 2</h3><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7WnZua01TMzBPdEU/view?usp=sharing">
-    <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2011_JFBG_MRsm.jpg"></a></p>
-     <h3>AGU 2013</h3><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7NUZ6b0JuOU5ZdWM/view?usp=sharing">
+    </div>
+    </div>
+    
+    
+     <div class="row">
+   <div class="col-md-6 col-sm-12">
+     <h3 id="poster-title">AGU 2013</h3><h4 id="poster-title">Seismic Scattering</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7NUZ6b0JuOU5ZdWM/view?usp=sharing">
     <img class="poster-sm center-block" align="middle"  src="images/posters/AGU_2013_JFBGsm.jpg"></a></p>
-    <h3>AGU 2012</h3><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7MmdERVBkY1hSWms/view?usp=sharing">
-    <img class="poster-sm center-block" align="middle"  src="images/posters/AGU_2012_JFBGsm.jpg"></a></p>
-    <h3>AGU 2011</h3><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7c0M5dWh4OGNKYlE/view?usp=sharing">
-    <img class="poster-sm center-block" align="middle"  src="images/posters/AGU_2011_JFBGsm.jpg"></a></p>   
+       </div>
+   
+    <div class="col-md-6 col-sm-12">
+    <h3 id="poster-title">LPSC 2011</h3><h4 id="poster-title">LPI Internship</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7WnZua01TMzBPdEU/view?usp=sharing">
+    <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2011_JFBG_MRsm.jpg"></a></p>
+    </div>
+    
+    <div class="row">
+   <div class="col-md-6 col-sm-12">
+    <h3 id="poster-title">AGU 2012</h3><h4 id="poster-title">Seismic Scattering</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7MmdERVBkY1hSWms/view?usp=sharing">
+    <img class="poster-sm center-block" align="middle"  src="images/posters/AGU_2012_JFBGsm.jpg"></a></p></div>
+    
+    
+     
+   <div class="col-md-6 col-sm-12">
+    <h3 id="poster-title">AGU 2011</h3><h4 id="poster-title">Seismic Scattering</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7c0M5dWh4OGNKYlE/view?usp=sharing">
+    <img class="poster-sm center-block" align="middle"  src="images/posters/AGU_2011_JFBGsm.jpg"></a></p>   </div>
+    </div>     
+
+         
+         
+    </div>
 </div>
 </div>
-</div>    
+</div>       
     
     
     
@@ -163,7 +244,130 @@
     
 </div>
 </div>
+
     
+             
+    <div style="display:none;">
+        <div id="ninja-slider">
+            <div class="slider-inner">
+                <ul>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_01.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_02.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_03.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_04.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_05.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_06.png"></a>
+                        <div class="caption">
+                           <h3>Caption:</h3>
+                            <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_07.png"></a>
+                        <div class="caption">
+                           <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_08.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_09.png"></a>
+                        <div class="caption">
+                            <h3>Dummy Caption 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan purus.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_10.png"></a>
+                        <div class="caption">
+                             <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_11.png"></a>
+                        <div class="caption">
+                             <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_12.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_13.png"></a>
+                        <div class="caption">
+                           <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_14.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_15.png"></a>
+                        <div class="caption">
+                           <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/AGU2015/AGU2015_16.png"></a>
+                        <div class="caption">
+                             <h3>Caption:</h3>
+                             <p>Under Construction!</p>
+                        </div>
+                    </li>
+                </ul>
+                <div id="fsBtn" class="fs-icon" title="Expand/Close"></div>
+            </div>
+        </div>
+    </div>
     
 <!--
 

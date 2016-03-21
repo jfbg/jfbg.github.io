@@ -311,7 +311,7 @@
 }
 
 .poster-sm {
-    width: 75%;
+    width: 95%;
     height: auto;
     border:1px solid #021a40;
 }
@@ -358,6 +358,12 @@
 }
 
 #res-caption {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-size: 12px;
+}
+
+#poster-title {
+    text-align: center;
 }
