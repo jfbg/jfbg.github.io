@@ -28,31 +28,25 @@
             var fsBtn = document.getElementById("fsBtn");
             fsBtn.click();
         }
+      
+         function lightbox2(idx) {
+            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
+            var ninjaSldr2 = document.getElementById("ninja-slider2");
+            ninjaSldr2.parentNode.style.display = "block";
+
+            nslider2.init(idx);
+
+            var fsBtn2 = document.getElementById("fsBtn2");
+            fsBtn2.click();
+        }
 
         function fsIconClick(isFullscreen) { //fsIconClick is the default event handler of the fullscreen button
             var ninjaSldr = document.getElementById("ninja-slider");
-            ninjaSldr.parentNode.style.display = isFullscreen ? "block" : "none";
+            ninjaSldr.parentNode.style.display = isFullscreen ? "block" : "none";            
+            var ninjaSldr2 = document.getElementById("ninja-slider2");
+            ninjaSldr2.parentNode.style.display = isFullscreen ? "block" : "none";
         }
   </script>
-    
-      <script>
-        function lightbox2(idx) {
-            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
-            var ninjaSldr = document.getElementById("ninja-slider2");
-            ninjaSldr.parentNode.style.display = "block";
-
-            nslider.init(idx);
-
-            var fsBtn2 = document.getElementById("fsBtn2");
-            fsBtn.click();
-        }
-
-        function fsIconClick(isFullscreen) { //fsIconClick is the default event handler of the fullscreen button
-            var ninjaSldr = document.getElementById("ninja-slider2");
-            ninjaSldr.parentNode.style.display = isFullscreen ? "block" : "none";
-        }
-  </script>
-
     
 
 </head>
@@ -179,7 +173,7 @@
     <div class="row">
         <div class="col-md-6 col-sm-12"> 
             <h3 id="poster-title">LPSC 2015</h3>
-            <h4 id="poster-title">Interior Structure Inversion</h4>
+            <h4 id="poster-title">Interior Structure Inversion (Poster)</h4>
             <p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7dmVvMVE1eGptOU0/view?usp=sharing">
             <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2015_JFBGsm.jpg"></a></p>
         </div>
@@ -194,45 +188,61 @@
         
     <div class="row">
 
-    <div class="col-md-6 col-sm-12">
-    <h3 id="poster-title">LPSC 2012</h3><h4 id="poster-title">Seismic Scattering</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7bkpTYWFfTXlIX28/view?usp=sharing">
-    <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2012_JFBGsm.jpg"></a></p>
-    </div>
-    
+        <div class="col-md-6 col-sm-12">
+            <h3 id="poster-title">LPSC 2014</h3>
+            <h4 id="poster-title">Seismic Scattering</h4>
+            <p><img class="poster-sm center-block" align="middle" src="images/presentations/LPSC2014/LPSC_PNG-1.png" onclick="lightbox2(0)"></p>  
+        </div>
         
-        <div class="col-md-6 col-sm-12">  
-       <h3 id="poster-title">LPSC 2011</h3><h4 id="poster-title">Seismic Scattering</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7Z3lKbzZubFkxZkU/view?usp=sharing">
-    <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2011_JFBG_codasm.jpg"></a></p>
-    </div>
-    </div>
-    
-    
-     <div class="row">
-   <div class="col-md-6 col-sm-12">
-     <h3 id="poster-title">AGU 2013</h3><h4 id="poster-title">Seismic Scattering</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7NUZ6b0JuOU5ZdWM/view?usp=sharing">
+        <div class="col-md-6 col-sm-12">
+     <h3 id="poster-title">AGU 2013</h3><h4 id="poster-title">Seismic Scattering (Poster)</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7NUZ6b0JuOU5ZdWM/view?usp=sharing">
     <img class="poster-sm center-block" align="middle"  src="images/posters/AGU_2013_JFBGsm.jpg"></a></p>
-       </div>
-   
-    <div class="col-md-6 col-sm-12">
-    <h3 id="poster-title">LPSC 2011</h3><h4 id="poster-title">LPI Internship</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7WnZua01TMzBPdEU/view?usp=sharing">
-    <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2011_JFBG_MRsm.jpg"></a></p>
+        </div>
+        
+    </div>
+    
+    
+    <div class="row"> 
+                <div class="col-md-6 col-sm-12">
+            <h3 id="poster-title">LPSC 2012</h3>
+            <h4 id="poster-title">Seismic Scattering (Poster)</h4>
+            <p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7bkpTYWFfTXlIX28/view?usp=sharing"><img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2012_JFBGsm.jpg"></a></p>
+        </div>
+        
+  
+   <div class="col-md-6 col-sm-12">
+    <h3 id="poster-title">AGU 2012</h3><h4 id="poster-title">Seismic Scattering (Poster)</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7MmdERVBkY1hSWms/view?usp=sharing">
+    <img class="poster-sm center-block" align="middle"  src="images/posters/AGU_2012_JFBGsm.jpg"></a></p></div>
+          
+        
     </div>
     
     <div class="row">
-   <div class="col-md-6 col-sm-12">
-    <h3 id="poster-title">AGU 2012</h3><h4 id="poster-title">Seismic Scattering</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7MmdERVBkY1hSWms/view?usp=sharing">
-    <img class="poster-sm center-block" align="middle"  src="images/posters/AGU_2012_JFBGsm.jpg"></a></p></div>
-    
-    
+ 
+    <div class="col-md-6 col-sm-12">  
+       <h3 id="poster-title">LPSC 2011</h3><h4 id="poster-title">Seismic Scattering (Poster)</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7Z3lKbzZubFkxZkU/view?usp=sharing">
+    <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2011_JFBG_codasm.jpg"></a></p>
+    </div>
+        
+     <div class="col-md-6 col-sm-12">
+    <h3 id="poster-title">LPSC 2011</h3><h4 id="poster-title">LPI Internship (Poster)</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7WnZua01TMzBPdEU/view?usp=sharing">
+    <img class="poster-sm center-block" align="middle"  src="images/posters/LPSC_2011_JFBG_MRsm.jpg"></a></p>
+    </div>
+        
+    </div>
+        
+             
+
+    <div class="row">
+
      
    <div class="col-md-6 col-sm-12">
-    <h3 id="poster-title">AGU 2011</h3><h4 id="poster-title">Seismic Scattering</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7c0M5dWh4OGNKYlE/view?usp=sharing">
+    <h3 id="poster-title">AGU 2011</h3><h4 id="poster-title">Seismic Scattering (Poster)</h4><p><a target="_blank" href="https://drive.google.com/file/d/0BwrudXC30yZ7c0M5dWh4OGNKYlE/view?usp=sharing">
     <img class="poster-sm center-block" align="middle"  src="images/posters/AGU_2011_JFBGsm.jpg"></a></p>   </div>
-    </div>     
-
-         
-         
+    
     </div>
+         
+     
 </div>
 </div>
 </div>       
@@ -246,8 +256,7 @@
 </div>
 
     
-             
-    <div style="display:none;">
+<div style="display:none;">
         <div id="ninja-slider">
             <div class="slider-inner">
                 <ul>
@@ -255,116 +264,281 @@
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_01.png"></a>
                         <div class="caption">
                             <h3>Caption:</h3>
-                            <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_02.png"></a>
                         <div class="caption">
                             <h3>Caption:</h3>
-                            <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_03.png"></a>
                         <div class="caption">
                             <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_04.png"></a>
                         <div class="caption">
                             <h3>Caption:</h3>
-                            <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_05.png"></a>
                         <div class="caption">
                             <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_06.png"></a>
                         <div class="caption">
                            <h3>Caption:</h3>
-                            <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_07.png"></a>
                         <div class="caption">
                            <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_08.png"></a>
                         <div class="caption">
                             <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_09.png"></a>
                         <div class="caption">
-                            <h3>Dummy Caption 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan purus.</p>
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_10.png"></a>
                         <div class="caption">
                              <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_11.png"></a>
                         <div class="caption">
                              <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_12.png"></a>
                         <div class="caption">
                             <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_13.png"></a>
                         <div class="caption">
                            <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_14.png"></a>
                         <div class="caption">
                             <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_15.png"></a>
                         <div class="caption">
                            <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/AGU2015/AGU2015_16.png"></a>
                         <div class="caption">
                              <h3>Caption:</h3>
-                             <p>Under Construction!</p>
+                            <p>Under Construction! Coming soon.</p>
                         </div>
                     </li>
                 </ul>
                 <div id="fsBtn" class="fs-icon" title="Expand/Close"></div>
+            </div>
+        </div>
+    </div>             
+    
+<div style="display:none;">
+        <div id="ninja-slider2">
+            <div class="slider-inner">
+                <ul>
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-1.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-2.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li>                  
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-3.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-4.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-5.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-6.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-7.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-8.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-9.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-10.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-11.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-12.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-13.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-14.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-15.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-16.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-17.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-18.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-19.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-20.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-21.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                    <li>
+                        <a class="ns-img" href="images/presentations/LPSC2014/LPSC_PNG-22.png"></a>
+                        <div class="caption">
+                            <h3>Caption:</h3>
+                            <p>Under Construction! Coming soon.</p>
+                        </div>
+                    </li> 
+                   
+                </ul>
+                <div id="fsBtn2" class="fs-icon" title="Expand/Close"></div>
             </div>
         </div>
     </div>
