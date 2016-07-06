@@ -1726,3 +1726,7 @@ font-family: 'Oxygen', sans-serif;
     height: auto;
     border:1px solid #021a40;
 }
+
+#capIn {
+    text-align: justify;
+}
