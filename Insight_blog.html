@@ -134,102 +134,102 @@ at the San Diego 911 Call Center</h4>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-01.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
+<!--                            <h4>Caption:</h4>-->
                             <p>For this consulting project I have consulted with the City of San Diego to optimize the staff levels at their 911 Call Center.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-02.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
+<!--                            <h4>Caption:</h4>-->
                             <p>Whereas the California state standard requires 90% of the calls to be picked up in less than 10 seconds, San Diego's only achieved this for about 68% of the calls. This means that 32% of the callers had to wait for more than 10 seconds before reaching help.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-03.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
+<!--                            <h4>Caption:</h4>-->
                             <p>That is highly problematic !</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-04.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
+<!--                            <h4>Caption:</h4>-->
                             <p>	The city asked me to provide them with a predictive model of the hourly call load (how many calls per hour can the system expect). Based on this model, the city would like some recommendations on the staff number it needs to get to minimize the wait times. The city provided me with about a year worth of call data, which is over a million individual call logs</p><p></p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-05.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
+<!--                            <h4>Caption:</h4>-->
                             <p>This data was cleaned up and converted to a Postgres database to facilitate data query and analysis.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-06.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>From that, I provided the city with a web app, disguised as a blog, that let's them visualize and understand their data. I also use it to walk them through the analysis and present them the model, recommendations, and some actionable insights they can implement to address the issue.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-07.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>To compute the model, I have started by using a Fourier Transform: a powerful analytical tool for time series. This transform gives information about the main structures and cyclical variations in the signal. Examples are this very pronounced daily variation (24 hour cycle) in the number of calls. Also, the 8 hour cycle that is related to people going to and back from work (more traffic, more accidents, more calls).</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-08.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>I then used these cycles as features in a multivariate polynomial regression. The result is the model shown on the next slide, that has R^2 coefficient of about 0.84. This means the model can predict fairly well the number of calls.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-09.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>The model versus the data. Next slide: What can't the model predict?</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-10.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>Here I am showing the residuals (the data - the model) and we can see that the model cannot predict about +/- 12 calls per hour, which is not bad given the average call load. However the model also cannot predict large spikes in the data, times where the number of calls jumps by 50 or a 100 calls per hour. So what are the spikes, and we can predict them. Well Yes!</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-11.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>Some of the spikes relate to either a holiday, for example midnight New Year's Eve. Partying, drunk people tend to get hurt: highly predictable. </p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-12.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>And the others are linked to extreme weather events. So these are predictable with good weather reports.</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-13.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>Examples of call spikes related to weather extremes.</p>
                         </div>
                     </li>
-<!--
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-14.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>We now have a strong predictive model. How can we use this to recommend the proper number of staff needed to be answering those calls? To do so, I focused on the times where wait times were less than 10 seconds.</p>
                         </div>
                     </li>
+<!--
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-15.png"></a>
                         <div class="caption">
@@ -241,15 +241,16 @@ at the San Diego 911 Call Center</h4>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-16.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>From there I computed the optimal number of calls one staff can deal with to maintain that low wait time. Turns out the magic number is 6 (it is actually a bit more than 6, but it's better to be on the safe side and round down).
+</p>
                         </div>
                     </li>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-17.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p>The next step is simply to divide the predicted number of calls by 6 to get the optimal number of staff, which is what is shown here. In green, my recommendations, in orange the current levels. (The city asked me to not show actual values.)</p>
                         </div>
                     </li>
 <!--
@@ -264,8 +265,8 @@ at the San Diego 911 Call Center</h4>
                     <li>
                         <a class="ns-img" href="images/presentations/Insight/Blanchette_demos_FINAL-19.png"></a>
                         <div class="caption">
-                            <h4>Caption:</h4>
-                            <p>Under Construction! Coming soon.</p>
+<!--                            <h4>Caption:</h4>-->
+                            <p></p>
                         </div>
                     </li>
                     <li>
