@@ -1723,6 +1723,7 @@ font-family: 'Oxygen', sans-serif;
 .posterInsight-sm {
    
     width: 65%;
+    max-width: 650px;
     height: auto;
     border:1px solid #021a40;
 }
