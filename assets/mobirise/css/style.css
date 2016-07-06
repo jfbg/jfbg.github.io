@@ -1720,3 +1720,9 @@ font-family: 'Oxygen', sans-serif;
 	text-align: center;
 	padding: 0;
 }
+.posterInsight-sm {
+   
+    width: 65%;
+    height: auto;
+    border:1px solid #021a40;
+}
