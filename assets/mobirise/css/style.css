@@ -1730,7 +1730,8 @@ font-family: 'Oxygen', sans-serif;
 
 #capIn {
     text-align: justify;
-    padding-bottom: 50px
+    padding-bottom: 50px;
+    max-width: 650px;
 }
 
 #poster-title2 {
